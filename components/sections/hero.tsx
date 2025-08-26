@@ -4,7 +4,18 @@ import * as React from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone, Code2, Sparkles } from "lucide-react"
+import {
+  ReactIcon,
+  JavaScriptIcon,
+  PythonIcon,
+  NodeIcon,
+  MongoDBIcon,
+  MySQLIcon,
+  CppIcon,
+  GitIcon,
+  TailwindIcon
+} from "@/components/tech-icons"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -92,16 +103,89 @@ export function HeroSection() {
           </motion.h1>
 
           {/* Subtitle with typing effect */}
-          <motion.div variants={itemVariants} className="mb-6">
-            <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-4">
+          <motion.div variants={itemVariants} className="mb-8">
+            <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6">
               Junior Software Developer
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Proficient in{" "}
-              <span className="text-primary font-semibold">C, C++, JavaScript, Python and React</span>,
-              with strong foundations in Data Structures & Algorithms, Operating Systems, 
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
+              Building responsive web applications with modern technologies,
+              with strong foundations in Data Structures & Algorithms, Operating Systems,
               DBMS, and Object-Oriented Programming.
             </p>
+
+            {/* Tech Stack Icons */}
+            <div className="flex flex-col items-center gap-4">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Code2 className="w-4 h-4" />
+                <span>Tech Stack</span>
+                <Sparkles className="w-4 h-4" />
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-4 max-w-2xl">
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <ReactIcon size={32} className="text-[#61DAFB]" />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <JavaScriptIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <PythonIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <CppIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <NodeIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <MongoDBIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <MySQLIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <TailwindIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                >
+                  <GitIcon size={32} />
+                </motion.div>
+              </div>
+            </div>
           </motion.div>
 
           {/* Stats */}

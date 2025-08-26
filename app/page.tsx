@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/sections/hero"
+import { TechShowcaseSection } from "@/components/sections/tech-showcase"
 import { AboutSection } from "@/components/sections/about"
 import { ExperienceSection } from "@/components/sections/experience"
 import { EducationSection } from "@/components/sections/education"
@@ -13,6 +14,7 @@ export default function Home() {
       <Navigation />
       <main>
         <HeroSection />
+        <TechShowcaseSection />
         <AboutSection />
         <ExperienceSection />
         <EducationSection />

@@ -5,59 +5,112 @@ import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { 
-  Code, 
-  Palette, 
-  Server, 
-  Database, 
-  Settings, 
+import {
+  Code,
+  Palette,
+  Server,
+  Database,
+  Settings,
   Brain,
   Trophy,
   ExternalLink,
   Star
 } from "lucide-react"
+import {
+  skillIcons,
+  CIcon,
+  CppIcon,
+  JavaScriptIcon,
+  PythonIcon,
+  JavaIcon,
+  HTMLIcon,
+  CSSIcon,
+  ReactIcon,
+  TailwindIcon,
+  NodeIcon,
+  ExpressIcon,
+  MySQLIcon,
+  MongoDBIcon,
+  GitIcon,
+  VercelIcon,
+  type SkillName
+} from "@/components/tech-icons"
 
 const skillCategories = [
   {
     title: "Programming",
     icon: Code,
     description: "Core programming languages and markup",
-    skills: ["C", "C++", "JavaScript", "Python", "Java", "HTML", "CSS"],
+    skills: [
+      { name: "C", icon: CIcon, hasIcon: true },
+      { name: "C++", icon: CppIcon, hasIcon: true },
+      { name: "JavaScript", icon: JavaScriptIcon, hasIcon: true },
+      { name: "Python", icon: PythonIcon, hasIcon: true },
+      { name: "Java", icon: JavaIcon, hasIcon: true },
+      { name: "HTML", icon: HTMLIcon, hasIcon: true },
+      { name: "CSS", icon: CSSIcon, hasIcon: true }
+    ],
     color: "text-blue-500"
   },
   {
     title: "Frontend",
     icon: Palette,
     description: "User interface and experience technologies",
-    skills: ["React", "Responsive Design", "Accessibility (ARIA)", "TailwindCSS"],
+    skills: [
+      { name: "React", icon: ReactIcon, hasIcon: true },
+      { name: "TailwindCSS", icon: TailwindIcon, hasIcon: true },
+      { name: "Responsive Design", hasIcon: false },
+      { name: "Accessibility (ARIA)", hasIcon: false }
+    ],
     color: "text-purple-500"
   },
   {
     title: "Backend",
     icon: Server,
     description: "Server-side development and APIs",
-    skills: ["Node.js", "Express.js", "REST APIs"],
+    skills: [
+      { name: "Node.js", icon: NodeIcon, hasIcon: true },
+      { name: "Express.js", icon: ExpressIcon, hasIcon: true },
+      { name: "REST APIs", hasIcon: false }
+    ],
     color: "text-green-500"
   },
   {
     title: "Databases",
     icon: Database,
     description: "Data storage and management",
-    skills: ["MySQL", "MongoDB", "CRUD", "Indexing"],
+    skills: [
+      { name: "MySQL", icon: MySQLIcon, hasIcon: true },
+      { name: "MongoDB", icon: MongoDBIcon, hasIcon: true },
+      { name: "CRUD", hasIcon: false },
+      { name: "Indexing", hasIcon: false }
+    ],
     color: "text-orange-500"
   },
   {
     title: "Developer Tools",
     icon: Settings,
     description: "Development workflow and deployment",
-    skills: ["Git", "GitHub", "Postman", "Vercel", "Microsoft Office Suite"],
+    skills: [
+      { name: "Git", icon: GitIcon, hasIcon: true },
+      { name: "GitHub", hasIcon: false },
+      { name: "Postman", hasIcon: false },
+      { name: "Vercel", icon: VercelIcon, hasIcon: true },
+      { name: "Microsoft Office Suite", hasIcon: false }
+    ],
     color: "text-gray-500"
   },
   {
     title: "Core Areas",
     icon: Brain,
     description: "Computer science fundamentals",
-    skills: ["Data Structures & Algorithms", "Operating Systems", "DBMS", "Computer Networks", "OOP"],
+    skills: [
+      { name: "Data Structures & Algorithms", hasIcon: false },
+      { name: "Operating Systems", hasIcon: false },
+      { name: "DBMS", hasIcon: false },
+      { name: "Computer Networks", hasIcon: false },
+      { name: "OOP", hasIcon: false }
+    ],
     color: "text-red-500"
   }
 ]
@@ -169,20 +222,29 @@ export function SkillsSection() {
                         transition={{ duration: 0.3 }}
                       >
                         <div className="flex flex-wrap gap-2">
-                          {category.skills.map((skill, skillIndex) => (
-                            <motion.div
-                              key={skillIndex}
-                              whileHover={{ scale: 1.1 }}
-                              whileTap={{ scale: 0.95 }}
-                            >
-                              <Badge 
-                                variant={isSelected ? "default" : "secondary"}
-                                className="text-xs cursor-pointer transition-all duration-200"
+                          {category.skills.map((skill, skillIndex) => {
+                            const SkillIcon = skill.hasIcon ? skill.icon : null
+                            return (
+                              <motion.div
+                                key={skillIndex}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.95 }}
                               >
-                                {skill}
-                              </Badge>
-                            </motion.div>
-                          ))}
+                                <Badge
+                                  variant={isSelected ? "default" : "secondary"}
+                                  className="text-xs cursor-pointer transition-all duration-200 flex items-center gap-2 px-3 py-2 h-auto"
+                                >
+                                  {SkillIcon && (
+                                    <SkillIcon
+                                      size={16}
+                                      className={skill.name === "Express.js" ? "text-foreground" : ""}
+                                    />
+                                  )}
+                                  <span>{skill.name}</span>
+                                </Badge>
+                              </motion.div>
+                            )
+                          })}
                         </div>
                       </motion.div>
                     </CardContent>

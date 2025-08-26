@@ -4,7 +4,7 @@ import * as React from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone, Code2, Sparkles } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone, Code2, Sparkles, Download } from "lucide-react"
 import {
   ReactIcon,
   JavaScriptIcon,
@@ -16,6 +16,7 @@ import {
   GitIcon,
   TailwindIcon
 } from "@/components/tech-icons"
+import { FloatingTechIcons } from "@/components/floating-tech-icons"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -50,33 +51,18 @@ export function HeroSection() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10 dark:from-primary/5 dark:to-blue-500/5" />
-      
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute bg-primary/5 rounded-full"
-            style={{
-              width: Math.random() * 300 + 50,
-              height: Math.random() * 300 + 50,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              opacity: [0.1, 0.3, 0.1],
-            }}
-            transition={{
-              duration: Math.random() * 3 + 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          />
-        ))}
+      {/* Enhanced background with gradient mesh */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10 dark:from-primary/5 dark:to-blue-500/5" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/5 via-transparent to-pink-500/5" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent" />
       </div>
+
+      {/* Floating tech icons */}
+      <FloatingTechIcons />
+
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 bg-grid-white/[0.02] bg-grid-black/[0.02] dark:bg-grid-white/[0.02]" />
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -237,24 +223,32 @@ export function HeroSection() {
           </motion.div>
 
           {/* Action buttons */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
           >
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               onClick={() => handleScrollToSection("contact")}
-              className="min-w-[150px]"
+              className="min-w-[150px] bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90"
             >
               Get In Touch
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               onClick={() => handleScrollToSection("experience")}
-              className="min-w-[150px]"
+              className="min-w-[150px] border-primary/20 hover:border-primary/40"
             >
               View Projects
+            </Button>
+            <Button
+              variant="ghost"
+              size="lg"
+              className="min-w-[150px] hover:bg-primary/5"
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Resume
             </Button>
           </motion.div>
 

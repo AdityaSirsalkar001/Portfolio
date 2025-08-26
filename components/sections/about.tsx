@@ -98,23 +98,26 @@ export function AboutSection() {
                 </p>
               </div>
 
-              <div>
-                <h4 className="text-lg font-semibold mb-3">What Drives Me</h4>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">▸</span>
+              <div className="bg-gradient-to-r from-primary/5 to-blue-500/5 p-6 rounded-lg border border-primary/10">
+                <h4 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                  <span className="text-2xl">🚀</span>
+                  What Drives Me
+                </h4>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start gap-3">
+                    <span className="text-lg">💻</span>
                     <span>Writing clean, maintainable, and efficient code</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">▸</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-lg">📚</span>
                     <span>Continuous learning and staying updated with latest technologies</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">▸</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-lg">🤝</span>
                     <span>Collaborating in agile teams and delivering quality solutions</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">▸</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-lg">🧠</span>
                     <span>Problem-solving through data structures and algorithms</span>
                   </li>
                 </ul>

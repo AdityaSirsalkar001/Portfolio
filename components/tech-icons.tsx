@@ -101,6 +101,34 @@ export const VercelIcon = ({ className, size = 24 }: TechIconProps) => (
   </svg>
 )
 
+// Coding platform logos
+export const LeetCodeIcon = ({ className, size = 24 }: TechIconProps) => (
+  <img
+    src="https://cdn.simpleicons.org/leetcode/FFA116"
+    width={size}
+    height={size}
+    className={className}
+    alt="LeetCode logo"
+    loading="lazy"
+  />
+)
+
+export const CodeforcesIcon = ({ className, size = 24 }: TechIconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" className={className}>
+    <rect x="3" y="10" width="4" height="10" fill="#1F71AC" rx="1"/>
+    <rect x="10" y="6" width="4" height="14" fill="#D32F2F" rx="1"/>
+    <rect x="17" y="12" width="4" height="8" fill="#F9A825" rx="1"/>
+  </svg>
+)
+
+export const CodeChefIcon = ({ className, size = 24 }: TechIconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" className={className}>
+    <path fill="#6A4C3A" d="M5 14c0-3.3 3.6-6 8-6s8 2.7 8 6c0 1.7-1.6 3-3.5 3H8.5C6.6 17 5 15.7 5 14z"/>
+    <path fill="#6A4C3A" d="M9 9.5C9 8.1 10.6 7 12.5 7S16 8.1 16 9.5V10H9V9.5z"/>
+    <rect x="7" y="10" width="11" height="2" fill="#6A4C3A" rx="1"/>
+  </svg>
+)
+
 // Skill category mapping
 export const skillIcons = {
   // Programming Languages

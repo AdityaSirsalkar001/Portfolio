@@ -33,6 +33,9 @@ import {
   MongoDBIcon,
   GitIcon,
   VercelIcon,
+  LeetCodeIcon,
+  CodeforcesIcon,
+  CodeChefIcon,
   type SkillName
 } from "@/components/tech-icons"
 
@@ -107,9 +110,8 @@ const skillCategories = [
     skills: [
       { name: "Data Structures & Algorithms", hasIcon: false },
       { name: "Operating Systems", hasIcon: false },
-      { name: "DBMS", hasIcon: false },
-      { name: "Computer Networks", hasIcon: false },
-      { name: "OOP", hasIcon: false }
+      { name: "Computer Organization & Architecture", hasIcon: false },
+      { name: "Object-Oriented Programming", hasIcon: false }
     ],
     color: "text-red-500"
   }
@@ -120,22 +122,31 @@ const codingProfiles = [
     platform: "LeetCode",
     score: "1600+",
     description: "Problems solved with consistent practice",
-    icon: "🏆",
-    color: "from-orange-400 to-orange-600"
+    icon: LeetCodeIcon,
+    color: "from-orange-400 to-orange-600",
+    link: "https://leetcode.com/u/AdityaSirsalkar/",
+    bg: "bg-[#fff7e6]",
+    ring: "ring-[#FFA116]/30"
   },
   {
     platform: "Codeforces",
-    score: "1040",
+    score: "1100+",
     description: "Rating achieved through contests",
-    icon: "⭐",
-    color: "from-blue-400 to-blue-600"
+    icon: CodeforcesIcon,
+    color: "from-blue-400 to-blue-600",
+    link: "https://codeforces.com/profile/AdityaSirsalkar",
+    bg: "bg-[#e8f1f8]",
+    ring: "ring-[#1F71AC]/30"
   },
   {
     platform: "CodeChef",
-    score: "2★",
-    description: "Star rating on competitive platform",
-    icon: "🥇",
-    color: "from-purple-400 to-purple-600"
+    score: "1500+",
+    description: "Rating achieved through contests",
+    icon: CodeChefIcon,
+    color: "from-purple-400 to-purple-600",
+    link: "https://www.codechef.com/users/amaze_iiita_76",
+    bg: "bg-[#f3ece7]",
+    ring: "ring-[#6A4C3A]/30"
   }
 ]
 
@@ -264,18 +275,14 @@ export function SkillsSection() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {codingProfiles.map((profile, index) => (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.05, y: -5 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <Card className="text-center border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+              {codingProfiles.map((profile, index) => {
+                const Icon = profile.icon
+                const content = (
+                  <Card className="h-full text-center border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg flex flex-col">
                     <CardHeader>
                       <div className="flex flex-col items-center">
-                        <div className={`text-4xl mb-2 p-4 rounded-full bg-gradient-to-r ${profile.color} text-white`}>
-                          {profile.icon}
+                        <div className={`mb-2 p-3 rounded-full shadow ring-1 ${profile.bg || 'bg-white'} ${profile.ring || 'ring-border'}`}>
+                          <Icon size={32} />
                         </div>
                         <CardTitle className="text-xl">{profile.platform}</CardTitle>
                         <div className="text-2xl font-bold text-primary mt-2">
@@ -283,14 +290,30 @@ export function SkillsSection() {
                         </div>
                       </div>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="mt-auto">
                       <CardDescription className="text-center">
                         {profile.description}
                       </CardDescription>
                     </CardContent>
                   </Card>
-                </motion.div>
-              ))}
+                )
+
+                return (
+                  <motion.div
+                    key={index}
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    transition={{ duration: 0.2 }}
+                    className="h-full"
+                  >
+                    {profile.link ? (
+                      <a className="block h-full" href={profile.link} target="_blank" rel="noopener noreferrer" aria-label={`${profile.platform} profile`}>
+                        {content}
+                      </a>
+                    ) : content}
+                  </motion.div>
+                )
+              })}
             </div>
           </motion.div>
 

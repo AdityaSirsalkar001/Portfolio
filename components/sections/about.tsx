@@ -27,9 +27,9 @@ const achievements = [
   },
   {
     icon: Target,
-    number: "4+",
+    number: "3",
     label: "Projects Completed",
-    description: "Full-stack web applications and tools"
+    description: "Portfolio, FocusFlow, Event Promotion App"
   }
 ]
 
@@ -82,9 +82,9 @@ export function AboutSection() {
               <div>
                 <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I'm a passionate Junior Software Developer currently pursuing B.Tech in Information 
-                  Technology at IIITA. I specialize in building responsive UIs and practical web 
-                  applications, with expertise in modern frameworks and databases.
+                  I'm an aspiring Software Developer currently pursuing B.Tech in Information
+                  Technology at IIITA. I build responsive UIs and practical web
+                  applications using React and Tailwind, with solid CS fundamentals.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   I'm comfortable with <strong>Node.js, Express.js</strong> and integrating 
@@ -109,7 +109,7 @@ export function AboutSection() {
                     <span>Writing clean, maintainable, and efficient code</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-lg">📚</span>
+                    <span className="text-lg">��</span>
                     <span>Continuous learning and staying updated with latest technologies</span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -119,6 +119,10 @@ export function AboutSection() {
                   <li className="flex items-start gap-3">
                     <span className="text-lg">🧠</span>
                     <span>Problem-solving through data structures and algorithms</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-lg">🧩</span>
+                    <span>Refactoring legacy JavaScript to reduce complexity and improve maintainability</span>
                   </li>
                 </ul>
               </div>

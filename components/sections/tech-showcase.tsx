@@ -1,10 +1,12 @@
 "use client"
 
+"use client"
+
 import * as React from "react"
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { 
+import {
   ReactIcon,
   JavaScriptIcon,
   PythonIcon,
@@ -97,6 +99,23 @@ const itemVariants = {
 }
 
 export function TechShowcaseSection() {
+  const [stack, setStack] = React.useState<any[] | null>(null)
+
+  React.useEffect(() => {
+    const load = async () => {
+      try {
+        const res = await fetch('/api/stack')
+        if (res.ok) {
+          const data = await res.json()
+          if (Array.isArray(data) && data.length > 0) setStack(data)
+        }
+      } catch {}
+    }
+    load()
+  }, [])
+
+  const list = stack || featuredTech
+
   return (
     <section className="py-16 bg-muted/20">
       <div className="container mx-auto px-4">
@@ -118,35 +137,37 @@ export function TechShowcaseSection() {
           </motion.div>
 
           {/* Tech grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {featuredTech.map((tech, index) => {
-              const Icon = tech.icon
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 items-stretch">
+            {list.map((tech: any, index) => {
+              const Icon = (tech.icon || {}).render ? tech.icon : (tech.name === 'React' ? ReactIcon : tech.name === 'JavaScript' ? JavaScriptIcon : tech.name === 'Python' ? PythonIcon : tech.name === 'Node.js' ? NodeIcon : tech.name === 'MongoDB' ? MongoDBIcon : tech.name === 'MySQL' ? MySQLIcon : tech.name === 'C++' ? CppIcon : tech.name === 'Tailwind CSS' ? TailwindIcon : ReactIcon)
+              const color = tech.color || '#3b82f6'
               return (
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  whileHover={{ 
+                  className="h-full"
+                  whileHover={{
                     scale: 1.05,
                     y: -5,
                     transition: { duration: 0.2 }
                   }}
                 >
-                  <Card className="p-4 md:p-6 text-center border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group">
-                    <div className="flex flex-col items-center space-y-3">
+                  <Card className="h-full p-4 md:p-6 text-center border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group">
+                    <div className="flex flex-col items-center justify-between h-full space-y-3">
                       <div className="p-3 bg-muted/50 rounded-lg group-hover:bg-muted/80 transition-colors">
-                        <Icon size={32} style={{ color: tech.color }} />
+                        <Icon size={32} style={{ color }} />
                       </div>
                       <div>
                         <h3 className="font-semibold text-sm md:text-base">{tech.name}</h3>
                         <p className="text-xs md:text-sm text-muted-foreground mt-1">
                           {tech.description}
                         </p>
-                        <Badge 
-                          variant="outline" 
+                        <Badge
+                          variant="outline"
                           className="mt-2 text-xs"
-                          style={{ borderColor: tech.color + "30", color: tech.color }}
+                          style={{ borderColor: color + "30", color }}
                         >
-                          {tech.category}
+                          {tech.category || 'Tech'}
                         </Badge>
                       </div>
                     </div>

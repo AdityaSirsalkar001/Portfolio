@@ -9,23 +9,9 @@ import { ExternalLink, Calendar, MapPin } from "lucide-react"
 
 const experiences = [
   {
-    title: "FocusFlow — Productivity Web App",
-    role: "Junior Software Developer",
-    period: "06/2024 – 08/2024",
-    location: "Remote",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    description: "Built a comprehensive task management application with advanced features",
-    achievements: [
-      "Implemented task management with priorities, reminders, and deadline tracking; improved task entry-to-save flow by 35% fewer clicks",
-      "Built fully responsive layout (mobile-first) and optimized DOM updates to reduce interaction latency",
-      "Deployed as a static site; integrated GitHub Actions for lint checks on pull requests"
-    ],
-    type: "project"
-  },
-  {
     title: "Event Promotion App — UI/UX",
     role: "UI/UX Designer",
-    period: "07/2024 – 09/2024",
+    period: "10/2024 – 11/2024",
     location: "Remote",
     technologies: ["Figma"],
     description: "Designed comprehensive mobile application for event discovery and promotion",
@@ -36,30 +22,45 @@ const experiences = [
     type: "design"
   },
   {
-    title: "Portfolio Website",
-    role: "Frontend Developer",
-    period: "08/2024 – Present",
+    title: "FocusFlow — Productivity Web App",
+    role: "Junior Software Developer",
+    period: "02/2025 – 03/2025",
     location: "Remote",
-    technologies: ["React", "HTML", "CSS"],
-    description: "Developed personal portfolio website to showcase projects and skills",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    description: "Built a comprehensive task management application with advanced features",
     achievements: [
-      "Developed a responsive personal site to showcase projects, coding profiles, and achievements; integrated Open Graph metadata for rich link previews",
-      "Automated deployment with Vercel; added analytics to track visits and project link clicks"
+      "Implemented task management with priorities, reminders, and deadline tracking; improved task entry-to-save flow by 35% fewer clicks",
+      "Built fully responsive layout (mobile-first) and optimized DOM updates to reduce interaction latency",
+      "Deployed as a static site (Live Link); used localStorage for persistent task data"
     ],
     type: "project"
   },
   {
-    title: "Coding Practice Tracker (Mini App)",
-    role: "Junior Software Developer",
-    period: "02/2025 – 05/2025",
+    title: "Portfolio Website — Frontend",
+    role: "Frontend Developer",
+    period: "08/2025 – Present",
     location: "Remote",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB"],
-    description: "Built comprehensive dashboard for tracking coding practice and progress",
+    technologies: ["React", "Tailwind", "HTML", "CSS"],
+    description: "Developed personal portfolio website to showcase projects and skills",
     achievements: [
-      "Built a dashboard to log solved problems (platform, tag, difficulty); implemented CRUD APIs and JWT-protected routes",
-      "Added sorting/filters and basic charts for weekly streaks; exported summaries as CSV for review"
+      "Developed a responsive personal website optimized for desktop and mobile devices",
+      "Standardized design system by creating a component library, resulting in a uniform UI across 15+ web applications"
     ],
     type: "project"
+  },
+  {
+    title: "Chess Event Coordinator (Student Community) — IIIT Allahabad",
+    role: "Coordinator",
+    period: "08/2025 – Present",
+    location: "Prayagraj, India",
+    technologies: ["Community", "Coordination"],
+    description: "Organizing campus chess activities and events",
+    achievements: [
+      "Organizing and managing online chess tournaments, ensuring smooth scheduling and participation",
+      "Conducting monthly offline tournaments, handling registrations, pairings, and results",
+      "Collaborating with students to promote chess culture and engagement on campus"
+    ],
+    type: "community"
   }
 ]
 

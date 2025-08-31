@@ -33,6 +33,9 @@ import {
   MongoDBIcon,
   GitIcon,
   VercelIcon,
+  LeetCodeIcon,
+  CodeforcesIcon,
+  CodeChefIcon,
   type SkillName
 } from "@/components/tech-icons"
 

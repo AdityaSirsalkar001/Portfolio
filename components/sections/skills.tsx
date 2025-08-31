@@ -266,18 +266,14 @@ export function SkillsSection() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {codingProfiles.map((profile, index) => (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.05, y: -5 }}
-                  transition={{ duration: 0.2 }}
-                >
+              {codingProfiles.map((profile, index) => {
+                const Icon = profile.icon
+                const content = (
                   <Card className="text-center border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
                     <CardHeader>
                       <div className="flex flex-col items-center">
-                        <div className={`mb-2 p-4 rounded-full bg-gradient-to-r ${profile.color} text-white`}>
-                          {(() => { const Icon = profile.icon; return <Icon size={36} /> })()}
+                        <div className="mb-2 p-3 rounded-full bg-white dark:bg-white shadow ring-1 ring-border">
+                          <Icon size={32} />
                         </div>
                         <CardTitle className="text-xl">{profile.platform}</CardTitle>
                         <div className="text-2xl font-bold text-primary mt-2">
@@ -291,8 +287,23 @@ export function SkillsSection() {
                       </CardDescription>
                     </CardContent>
                   </Card>
-                </motion.div>
-              ))}
+                )
+
+                return (
+                  <motion.div
+                    key={index}
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {profile.link ? (
+                      <a href={profile.link} target="_blank" rel="noopener noreferrer" aria-label={`${profile.platform} profile`}>
+                        {content}
+                      </a>
+                    ) : content}
+                  </motion.div>
+                )
+              })}
             </div>
           </motion.div>
 

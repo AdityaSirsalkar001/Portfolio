@@ -123,21 +123,30 @@ const codingProfiles = [
     score: "1600+",
     description: "Problems solved with consistent practice",
     icon: LeetCodeIcon,
-    color: "from-orange-400 to-orange-600"
+    color: "from-orange-400 to-orange-600",
+    link: "https://leetcode.com/u/AdityaSirsalkar/",
+    bg: "bg-[#fff7e6]",
+    ring: "ring-[#FFA116]/30"
   },
   {
     platform: "Codeforces",
     score: "1100+",
     description: "Rating achieved through contests",
     icon: CodeforcesIcon,
-    color: "from-blue-400 to-blue-600"
+    color: "from-blue-400 to-blue-600",
+    link: "https://codeforces.com/profile/AdityaSirsalkar",
+    bg: "bg-[#e8f1f8]",
+    ring: "ring-[#1F71AC]/30"
   },
   {
     platform: "CodeChef",
     score: "1500+",
     description: "Rating achieved through contests",
     icon: CodeChefIcon,
-    color: "from-purple-400 to-purple-600"
+    color: "from-purple-400 to-purple-600",
+    link: "https://www.codechef.com/users/amaze_iiita_76",
+    bg: "bg-[#f3ece7]",
+    ring: "ring-[#6A4C3A]/30"
   }
 ]
 

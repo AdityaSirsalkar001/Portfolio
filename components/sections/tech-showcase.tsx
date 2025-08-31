@@ -99,6 +99,23 @@ const itemVariants = {
 }
 
 export function TechShowcaseSection() {
+  const [stack, setStack] = React.useState<any[] | null>(null)
+
+  React.useEffect(() => {
+    const load = async () => {
+      try {
+        const res = await fetch('/api/stack')
+        if (res.ok) {
+          const data = await res.json()
+          if (Array.isArray(data) && data.length > 0) setStack(data)
+        }
+      } catch {}
+    }
+    load()
+  }, [])
+
+  const list = stack || featuredTech
+
   return (
     <section className="py-16 bg-muted/20">
       <div className="container mx-auto px-4">

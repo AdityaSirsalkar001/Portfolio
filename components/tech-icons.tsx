@@ -103,10 +103,14 @@ export const VercelIcon = ({ className, size = 24 }: TechIconProps) => (
 
 // Coding platform logos
 export const LeetCodeIcon = ({ className, size = 24 }: TechIconProps) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" className={className}>
-    <path fill="#FFA116" d="M8.2 16.6l3.9 3.9c.4.4 1 .4 1.4 0s.4-1 0-1.4l-3.1-3.1 3.1-3.1c.4-.4.4-1 0-1.4s-1-.4-1.4 0L7.5 14.9c-.6.6-.6 1.1.7 1.7z"/>
-    <path fill="#000000" d="M16.5 5.5c-2.8-2.8-7.3-2.8-10.1 0-.4.4-.4 1 0 1.4s1 .4 1.4 0c2.1-2.1 5.6-2.1 7.7 0 2.1 2.1 2.1 5.6 0 7.7-2.1 2.1-5.6 2.1-7.7 0-.4-.4-1-.4-1.4 0s-.4 1 0 1.4c2.8 2.8 7.3 2.8 10.1 0 2.8-2.8 2.8-7.3 0-10.1z"/>
-  </svg>
+  <img
+    src="https://cdn.simpleicons.org/leetcode/FFA116"
+    width={size}
+    height={size}
+    className={className}
+    alt="LeetCode logo"
+    loading="lazy"
+  />
 )
 
 export const CodeforcesIcon = ({ className, size = 24 }: TechIconProps) => (

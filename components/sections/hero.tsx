@@ -82,7 +82,7 @@ export function HeroSection() {
           {/* Main heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 pt-10"
           >
             Hi, I'm{" "}
             <span className="text-gradient">Aditya Sirsalkar</span>

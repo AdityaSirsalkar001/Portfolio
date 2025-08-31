@@ -7,18 +7,16 @@ export async function POST(request: NextRequest) {
     const { page_path, referrer }: { page_path: string; referrer?: string } = body
 
     // Get client IP and user agent
-    const ip_address = request.ip || 
-      request.headers.get('x-forwarded-for') || 
-      request.headers.get('x-real-ip') || 
-      'unknown'
-    
-    const user_agent = request.headers.get('user-agent') || 'unknown'
+    const ipRaw = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || null
+    const ip_address = ipRaw ? ipRaw.split(',')[0].trim() : null
+
+    const user_agent = request.headers.get('user-agent') || null
 
     const client = await pool.connect()
     try {
       const result = await client.query(
         'INSERT INTO analytics (page_path, user_agent, ip_address, referrer) VALUES ($1, $2, $3, $4) RETURNING id',
-        [page_path, user_agent, ip_address, referrer]
+        [page_path, user_agent, ip_address, referrer || null]
       )
 
       return NextResponse.json(

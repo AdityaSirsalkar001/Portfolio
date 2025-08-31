@@ -122,21 +122,21 @@ const codingProfiles = [
     platform: "LeetCode",
     score: "1600+",
     description: "Problems solved with consistent practice",
-    icon: "🏆",
+    icon: LeetCodeIcon,
     color: "from-orange-400 to-orange-600"
   },
   {
     platform: "Codeforces",
     score: "1100+",
     description: "Rating achieved through contests",
-    icon: "⭐",
+    icon: CodeforcesIcon,
     color: "from-blue-400 to-blue-600"
   },
   {
     platform: "CodeChef",
     score: "1500+",
     description: "Rating achieved through contests",
-    icon: "🥇",
+    icon: CodeChefIcon,
     color: "from-purple-400 to-purple-600"
   }
 ]

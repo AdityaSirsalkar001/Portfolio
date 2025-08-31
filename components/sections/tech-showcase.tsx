@@ -154,7 +154,7 @@ export function TechShowcaseSection() {
                   <Card className="p-4 md:p-6 text-center border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg group">
                     <div className="flex flex-col items-center space-y-3">
                       <div className="p-3 bg-muted/50 rounded-lg group-hover:bg-muted/80 transition-colors">
-                        <Icon size={32} style={{ color: tech.color }} />
+                        <Icon size={32} style={{ color }} />
                       </div>
                       <div>
                         <h3 className="font-semibold text-sm md:text-base">{tech.name}</h3>
@@ -164,9 +164,9 @@ export function TechShowcaseSection() {
                         <Badge 
                           variant="outline" 
                           className="mt-2 text-xs"
-                          style={{ borderColor: tech.color + "30", color: tech.color }}
+                          style={{ borderColor: color + "30", color }}
                         >
-                          {tech.category}
+                          {tech.category || 'Tech'}
                         </Badge>
                       </div>
                     </div>

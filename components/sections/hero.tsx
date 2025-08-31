@@ -91,7 +91,7 @@ export function HeroSection() {
           {/* Subtitle with typing effect */}
           <motion.div variants={itemVariants} className="mb-8">
             <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6">
-              Junior Software Developer
+              Aspiring Software Developer
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
               Building responsive web applications with modern technologies,
@@ -243,12 +243,15 @@ export function HeroSection() {
               View Projects
             </Button>
             <Button
+              asChild
               variant="ghost"
               size="lg"
               className="min-w-[150px] hover:bg-primary/5"
             >
-              <Download className="w-4 h-4 mr-2" />
-              Resume
+              <a href="/api/resume" aria-label="Download Resume">
+                <Download className="w-4 h-4 mr-2" />
+                Resume
+              </a>
             </Button>
           </motion.div>
 

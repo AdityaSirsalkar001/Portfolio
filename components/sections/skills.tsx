@@ -125,15 +125,15 @@ const codingProfiles = [
   },
   {
     platform: "Codeforces",
-    score: "1040",
+    score: "1100+",
     description: "Rating achieved through contests",
     icon: "⭐",
     color: "from-blue-400 to-blue-600"
   },
   {
     platform: "CodeChef",
-    score: "2★",
-    description: "Star rating on competitive platform",
+    score: "1500+",
+    description: "Rating achieved through contests",
     icon: "🥇",
     color: "from-purple-400 to-purple-600"
   }

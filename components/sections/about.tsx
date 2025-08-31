@@ -27,9 +27,9 @@ const achievements = [
   },
   {
     icon: Target,
-    number: "4+",
+    number: "3",
     label: "Projects Completed",
-    description: "Full-stack web applications and tools"
+    description: "Portfolio, FocusFlow, Event Promotion App"
   }
 ]
 
@@ -109,7 +109,7 @@ export function AboutSection() {
                     <span>Writing clean, maintainable, and efficient code</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-lg">📚</span>
+                    <span className="text-lg">��</span>
                     <span>Continuous learning and staying updated with latest technologies</span>
                   </li>
                   <li className="flex items-start gap-3">

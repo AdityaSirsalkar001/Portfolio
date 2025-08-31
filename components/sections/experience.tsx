@@ -49,19 +49,6 @@ const experiences = [
     type: "project"
   },
   {
-    title: "Coding Practice Tracker (Mini App)",
-    role: "Junior Software Developer",
-    period: "02/2025 – 05/2025",
-    location: "Remote",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB"],
-    description: "Built comprehensive dashboard for tracking coding practice and progress",
-    achievements: [
-      "Built a dashboard to log solved problems (platform, tag, difficulty); implemented CRUD APIs and JWT-protected routes",
-      "Added sorting/filters and basic charts for weekly streaks; exported summaries as CSV for review"
-    ],
-    type: "project"
-  },
-  {
     title: "Chess Event Coordinator (Student Community) — IIIT Allahabad",
     role: "Coordinator",
     period: "08/2025 – Present",

@@ -36,20 +36,6 @@ const educationData = [
     ]
   },
   {
-    institution: "CBSE Board — Class XII",
-    degree: "Percentage: 79.3%",
-    description: "Higher Secondary Education",
-    period: "03/2024",
-    location: "Chhatrapati Sambhajinagar, India",
-    status: "completed",
-    icon: GraduationCap,
-    highlights: [
-      "Strong foundation in Mathematics and Science",
-      "Focus on Physics, Chemistry, and Mathematics",
-      "Preparation for competitive examinations"
-    ]
-  },
-  {
     institution: "Ace Academy — Class X",
     degree: "Percentage: 94%",
     description: "Secondary Education",

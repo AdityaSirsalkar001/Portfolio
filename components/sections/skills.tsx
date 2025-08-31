@@ -107,9 +107,8 @@ const skillCategories = [
     skills: [
       { name: "Data Structures & Algorithms", hasIcon: false },
       { name: "Operating Systems", hasIcon: false },
-      { name: "DBMS", hasIcon: false },
-      { name: "Computer Networks", hasIcon: false },
-      { name: "OOP", hasIcon: false }
+      { name: "Computer Organization & Architecture", hasIcon: false },
+      { name: "Object-Oriented Programming", hasIcon: false }
     ],
     color: "text-red-500"
   }

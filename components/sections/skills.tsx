@@ -278,10 +278,10 @@ export function SkillsSection() {
               {codingProfiles.map((profile, index) => {
                 const Icon = profile.icon
                 const content = (
-                  <Card className="text-center border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                  <Card className="h-full text-center border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg flex flex-col">
                     <CardHeader>
                       <div className="flex flex-col items-center">
-                        <div className="mb-2 p-3 rounded-full bg-white dark:bg-white shadow ring-1 ring-border">
+                        <div className={`mb-2 p-3 rounded-full shadow ring-1 ${profile.bg || 'bg-white'} ${profile.ring || 'ring-border'}`}>
                           <Icon size={32} />
                         </div>
                         <CardTitle className="text-xl">{profile.platform}</CardTitle>
@@ -290,7 +290,7 @@ export function SkillsSection() {
                         </div>
                       </div>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="mt-auto">
                       <CardDescription className="text-center">
                         {profile.description}
                       </CardDescription>
@@ -304,9 +304,10 @@ export function SkillsSection() {
                     variants={itemVariants}
                     whileHover={{ scale: 1.05, y: -5 }}
                     transition={{ duration: 0.2 }}
+                    className="h-full"
                   >
                     {profile.link ? (
-                      <a href={profile.link} target="_blank" rel="noopener noreferrer" aria-label={`${profile.platform} profile`}>
+                      <a className="block h-full" href={profile.link} target="_blank" rel="noopener noreferrer" aria-label={`${profile.platform} profile`}>
                         {content}
                       </a>
                     ) : content}

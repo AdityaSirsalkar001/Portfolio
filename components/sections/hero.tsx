@@ -261,12 +261,12 @@ export function HeroSection() {
             className="flex items-center justify-center gap-4 mb-12"
           >
             <Button variant="ghost" size="icon" className="rounded-full" asChild>
-              <a href="#" aria-label="LinkedIn Profile">
+              <a href="https://www.linkedin.com/in/adityasirsalkar/" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="rounded-full" asChild>
-              <a href="#" aria-label="GitHub Profile">
+              <a href="https://github.com/AdityaSirsalkar001" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5" />
               </a>
             </Button>

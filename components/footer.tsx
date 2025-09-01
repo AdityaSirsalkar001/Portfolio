@@ -18,13 +18,13 @@ const quickLinks = [
 const socialLinks = [
   {
     icon: Linkedin,
-    href: "#",
+    href: "https://www.linkedin.com/in/adityasirsalkar/",
     label: "LinkedIn",
     hoverColor: "hover:text-blue-600"
   },
   {
     icon: Github,
-    href: "#",
+    href: "https://github.com/AdityaSirsalkar001",
     label: "GitHub",
     hoverColor: "hover:text-gray-800 dark:hover:text-gray-200"
   },
@@ -77,7 +77,7 @@ export function Footer() {
                       className={`rounded-full transition-colors ${social.hoverColor}`}
                       asChild
                     >
-                      <a href={social.href} aria-label={social.label}>
+                      <a href={social.href} aria-label={social.label} target="_blank" rel="noopener noreferrer">
                         <Icon className="w-5 h-5" />
                       </a>
                     </Button>

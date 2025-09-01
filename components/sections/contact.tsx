@@ -61,13 +61,13 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/adityasirsalkar/",
     description: "Connect professionally"
   },
   {
     icon: Github,
-    label: "GitHub", 
-    href: "#",
+    label: "GitHub",
+    href: "https://github.com/AdityaSirsalkar001",
     description: "View my repositories"
   }
 ]
@@ -218,7 +218,7 @@ export function ContactSection() {
                             className="rounded-full"
                             asChild
                           >
-                            <a href={social.href} aria-label={social.label}>
+                            <a href={social.href} aria-label={social.label} target="_blank" rel="noopener noreferrer">
                               <Icon className="w-5 h-5" />
                             </a>
                           </Button>

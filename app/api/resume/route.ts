@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const RESUME_URL = 'https://cdn.builder.io/o/assets%2Ffbed7fa7b77344d986d0d6126e7ece42%2Fa25d572a67144d628e73fae4c40675e5?alt=media&token=c02d5ada-5df2-44ed-bed1-e80f8561a52e&apiKey=fbed7fa7b77344d986d0d6126e7ece42'
+const RESUME_URL = 'https://drive.google.com/uc?export=download&id=1eyqYlHZHhJFSS-NL1N233KJK6mDTn_Dt'
 
 export async function GET() {
   try {

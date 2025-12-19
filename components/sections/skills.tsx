@@ -60,10 +60,11 @@ const skillCategories = [
     icon: Palette,
     description: "User interface and experience technologies",
     skills: [
-      { name: "React", icon: ReactIcon, hasIcon: true },
-      { name: "TailwindCSS", icon: TailwindIcon, hasIcon: true },
-      { name: "Responsive Design", hasIcon: false },
-      { name: "Accessibility (ARIA)", hasIcon: false }
+      { name: "React.js", icon: ReactIcon, hasIcon: true },
+      { name: "Next.js", hasIcon: false },
+      { name: "Tailwind CSS", icon: TailwindIcon, hasIcon: true },
+      { name: "Material UI", hasIcon: false },
+      { name: "Responsive Design", hasIcon: false }
     ],
     color: "text-purple-500"
   },
@@ -97,9 +98,10 @@ const skillCategories = [
     skills: [
       { name: "Git", icon: GitIcon, hasIcon: true },
       { name: "GitHub", hasIcon: false },
+      { name: "VS Code", hasIcon: false },
       { name: "Postman", hasIcon: false },
       { name: "Vercel", icon: VercelIcon, hasIcon: true },
-      { name: "Microsoft Office Suite", hasIcon: false }
+      { name: "Google Maps API", hasIcon: false }
     ],
     color: "text-gray-500"
   },
@@ -120,8 +122,8 @@ const skillCategories = [
 const codingProfiles = [
   {
     platform: "LeetCode",
-    score: "1600+",
-    description: "Problems solved with consistent practice",
+    score: "1850+",
+    description: "Knight Badge (Top 5% globally)",
     icon: LeetCodeIcon,
     color: "from-orange-400 to-orange-600",
     link: "https://leetcode.com/u/AdityaSirsalkar/",
@@ -130,8 +132,8 @@ const codingProfiles = [
   },
   {
     platform: "Codeforces",
-    score: "1100+",
-    description: "Rating achieved through contests",
+    score: "1300+",
+    description: "Pupil rating through competitive contests",
     icon: CodeforcesIcon,
     color: "from-blue-400 to-blue-600",
     link: "https://codeforces.com/profile/AdityaSirsalkar",
@@ -140,8 +142,8 @@ const codingProfiles = [
   },
   {
     platform: "CodeChef",
-    score: "1500+",
-    description: "Rating achieved through contests",
+    score: "1600+",
+    description: "3-Star rating achieved through contests",
     icon: CodeChefIcon,
     color: "from-purple-400 to-purple-600",
     link: "https://www.codechef.com/users/amaze_iiita_76",
@@ -323,17 +325,17 @@ export function SkillsSection() {
               <CardHeader>
                 <div className="flex items-center justify-center gap-4 mb-4">
                   <Trophy className="w-8 h-8 text-primary" />
-                  <CardTitle className="text-2xl text-center">550+ Problems Solved</CardTitle>
+                  <CardTitle className="text-2xl text-center">800+ Problems Solved</CardTitle>
                 </div>
                 <CardDescription className="text-center text-lg">
-                  Maintained multi-week streaks while balancing academics, demonstrating 
-                  consistency and dedication to continuous learning
+                  Solved across LeetCode, Codeforces, and CodeChef platforms while maintaining
+                  multi-week streaks and balancing academics
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
                   <div>
-                    <div className="text-xl font-bold text-primary">550+</div>
+                    <div className="text-xl font-bold text-primary">800+</div>
                     <div className="text-sm text-muted-foreground">Total Problems</div>
                   </div>
                   <div>

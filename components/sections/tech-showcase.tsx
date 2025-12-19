@@ -14,7 +14,10 @@ import {
   MongoDBIcon,
   MySQLIcon,
   CppIcon,
-  TailwindIcon
+  TailwindIcon,
+  TypeScriptIcon,
+  FigmaIcon,
+  JavaIcon
 } from "@/components/tech-icons"
 
 const featuredTech = [
@@ -73,6 +76,27 @@ const featuredTech = [
     description: "Utility-first CSS",
     color: "#06B6D4",
     category: "Frontend"
+  },
+  {
+    name: "TypeScript",
+    icon: TypeScriptIcon,
+    description: "Type-safe JavaScript",
+    color: "#3178c6",
+    category: "Programming"
+  },
+  {
+    name: "Figma",
+    icon: FigmaIcon,
+    description: "UI/UX Design tool",
+    color: "#F24E1E",
+    category: "Design"
+  },
+  {
+    name: "Java",
+    icon: JavaIcon,
+    description: "Object-oriented programming",
+    color: "#ED8B00",
+    category: "Programming"
   }
 ]
 
@@ -114,7 +138,7 @@ export function TechShowcaseSection() {
     load()
   }, [])
 
-  const list = stack || featuredTech
+  const list = stack && stack.length > 0 ? [...stack, ...featuredTech.filter(tech => !stack.some(s => s.name === tech.name))] : featuredTech
 
   return (
     <section className="py-16 bg-muted/20">
@@ -139,7 +163,7 @@ export function TechShowcaseSection() {
           {/* Tech grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 items-stretch">
             {list.map((tech: any, index) => {
-              const Icon = (tech.icon || {}).render ? tech.icon : (tech.name === 'React' ? ReactIcon : tech.name === 'JavaScript' ? JavaScriptIcon : tech.name === 'Python' ? PythonIcon : tech.name === 'Node.js' ? NodeIcon : tech.name === 'MongoDB' ? MongoDBIcon : tech.name === 'MySQL' ? MySQLIcon : tech.name === 'C++' ? CppIcon : tech.name === 'Tailwind CSS' ? TailwindIcon : ReactIcon)
+              const Icon = (tech.icon || {}).render ? tech.icon : (tech.name === 'React' ? ReactIcon : tech.name === 'JavaScript' ? JavaScriptIcon : tech.name === 'Python' ? PythonIcon : tech.name === 'Node.js' ? NodeIcon : tech.name === 'MongoDB' ? MongoDBIcon : tech.name === 'MySQL' ? MySQLIcon : tech.name === 'C++' ? CppIcon : tech.name === 'Tailwind CSS' ? TailwindIcon : tech.name === 'TypeScript' ? TypeScriptIcon : tech.name === 'Figma' ? FigmaIcon : tech.name === 'Java' ? JavaIcon : ReactIcon)
               const color = tech.color || '#3b82f6'
               return (
                 <motion.div

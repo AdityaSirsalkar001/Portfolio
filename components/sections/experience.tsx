@@ -9,56 +9,58 @@ import { ExternalLink, Calendar, MapPin } from "lucide-react"
 
 const experiences = [
   {
-    title: "Event Promotion App — UI/UX",
-    role: "UI/UX Designer",
-    period: "10/2024 – 11/2024",
+    title: "Swasthya-Setu — Healthcare Platform",
+    role: "Frontend Lead & Git Manager",
+    period: "Group Project",
     location: "Remote",
-    technologies: ["Figma"],
-    description: "Designed comprehensive mobile application for event discovery and promotion",
+    technologies: ["React.js", "Tailwind CSS", "Node.js", "Google Maps API"],
+    description: "Co-developed a comprehensive healthcare platform featuring role-based dashboards for Patients, Doctors, and Hospitals",
     achievements: [
-      "Designed end-to-end mobile flows for event discovery with category filters and search, improving navigation depth by 40% in user testing (peer reviews)",
-      "Created reusable component library (buttons, cards, tabs) ensuring consistent spacing, type scale, and color tokens"
+      "Designed the Patient Interface using React.js and Tailwind CSS, integrating Google Maps API for hospital search",
+      "Led the QA & Debugging phase; identified critical bugs and managed the Git repository to resolve merge conflicts and ensure a stable deployment",
+      "Facilitated appointment booking and medical record management across multiple user roles"
     ],
-    type: "design"
+    type: "project"
   },
   {
     title: "FocusFlow — Productivity Web App",
-    role: "Junior Software Developer",
-    period: "02/2025 – 03/2025",
+    role: "Developer",
+    period: "Group Project",
     location: "Remote",
     technologies: ["HTML", "CSS", "JavaScript"],
-    description: "Built a comprehensive task management application with advanced features",
+    description: "Built a dynamic task management application with priority sorting and deadline tracking",
     achievements: [
-      "Implemented task management with priorities, reminders, and deadline tracking; improved task entry-to-save flow by 35% fewer clicks",
-      "Built fully responsive layout (mobile-first) and optimized DOM updates to reduce interaction latency",
-      "Deployed as a static site (Live Link); used localStorage for persistent task data"
+      "Implemented task management with priorities, reminders, and deadline tracking using pure JavaScript",
+      "Optimized DOM manipulation logic to ensure zero-latency updates and implemented Local Storage for persistent user data across sessions",
+      "Deployed effectively on Vercel"
     ],
-    type: "project"
+    type: "project",
+    projectUrl: "https://project1-nine-phi.vercel.app/"
   },
   {
-    title: "Portfolio Website — Frontend",
+    title: "Personal Portfolio Website",
     role: "Frontend Developer",
-    period: "08/2025 – Present",
+    period: "Project",
     location: "Remote",
-    technologies: ["React", "Tailwind", "HTML", "CSS"],
-    description: "Developed personal portfolio website to showcase projects and skills",
+    technologies: ["React", "Tailwind CSS"],
+    description: "Developed a responsive portfolio to aggregate coding profiles and projects in one location",
     achievements: [
-      "Developed a responsive personal website optimized for desktop and mobile devices",
-      "Standardized design system by creating a component library, resulting in a uniform UI across 15+ web applications"
+      "Deployed responsive portfolio at aditya-sirsalkar.vercel.app",
+      "Created a reusable component library to standardize UI elements (buttons, cards), ensuring consistent design across mobile and desktop views"
     ],
-    type: "project"
+    type: "project",
+    projectUrl: "https://aditya-sirsalkar.vercel.app/"
   },
   {
-    title: "Chess Event Coordinator (Student Community) — IIIT Allahabad",
-    role: "Coordinator",
-    period: "08/2025 – Present",
+    title: "Chess Event Coordinator",
+    role: "Student Community — IIIT Allahabad",
+    period: "Aug 2025 – Present",
     location: "Prayagraj, India",
-    technologies: ["Community", "Coordination"],
-    description: "Organizing campus chess activities and events",
+    technologies: ["Event Management", "Coordination"],
+    description: "Orchestrating online and offline chess tournaments for campus community",
     achievements: [
-      "Organizing and managing online chess tournaments, ensuring smooth scheduling and participation",
-      "Conducting monthly offline tournaments, handling registrations, pairings, and results",
-      "Collaborating with students to promote chess culture and engagement on campus"
+      "Orchestrated online and offline chess tournaments, managing logistics for 50+ participants",
+      "Handled dispute resolution, scheduling, and results compilation to foster a competitive chess culture on campus"
     ],
     type: "community"
   }
@@ -154,7 +156,7 @@ export function ExperienceSection() {
                         
                         <CardContent>
                           <p className="text-muted-foreground mb-4">{exp.description}</p>
-                          
+
                           {/* Technologies */}
                           <div className="flex flex-wrap gap-2 mb-4">
                             {exp.technologies.map((tech, techIndex) => (
@@ -165,7 +167,7 @@ export function ExperienceSection() {
                           </div>
 
                           {/* Achievements */}
-                          <ul className="space-y-2">
+                          <ul className="space-y-2 mb-4">
                             {exp.achievements.map((achievement, achievementIndex) => (
                               <li key={achievementIndex} className="flex items-start gap-2 text-sm">
                                 <span className="text-primary mt-1 flex-shrink-0">▸</span>
@@ -175,6 +177,21 @@ export function ExperienceSection() {
                               </li>
                             ))}
                           </ul>
+
+                          {/* View Project Button */}
+                          {exp.projectUrl && (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              asChild
+                              className="w-full border-primary/20 hover:border-primary/40"
+                            >
+                              <a href={exp.projectUrl} target="_blank" rel="noopener noreferrer">
+                                View Project
+                                <ExternalLink className="w-4 h-4 ml-2" />
+                              </a>
+                            </Button>
+                          )}
                         </CardContent>
                       </Card>
                     </motion.div>

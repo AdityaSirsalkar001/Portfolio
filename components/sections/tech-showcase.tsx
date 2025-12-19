@@ -14,7 +14,9 @@ import {
   MongoDBIcon,
   MySQLIcon,
   CppIcon,
-  TailwindIcon
+  TailwindIcon,
+  TypeScriptIcon,
+  FigmaIcon
 } from "@/components/tech-icons"
 
 const featuredTech = [
@@ -73,6 +75,20 @@ const featuredTech = [
     description: "Utility-first CSS",
     color: "#06B6D4",
     category: "Frontend"
+  },
+  {
+    name: "TypeScript",
+    icon: TypeScriptIcon,
+    description: "Type-safe JavaScript",
+    color: "#3178c6",
+    category: "Programming"
+  },
+  {
+    name: "Figma",
+    icon: FigmaIcon,
+    description: "UI/UX Design tool",
+    color: "#F24E1E",
+    category: "Design"
   }
 ]
 

@@ -122,8 +122,8 @@ const skillCategories = [
 const codingProfiles = [
   {
     platform: "LeetCode",
-    score: "1600+",
-    description: "Problems solved with consistent practice",
+    score: "1850+",
+    description: "Knight Badge (Top 5% globally)",
     icon: LeetCodeIcon,
     color: "from-orange-400 to-orange-600",
     link: "https://leetcode.com/u/AdityaSirsalkar/",
@@ -132,8 +132,8 @@ const codingProfiles = [
   },
   {
     platform: "Codeforces",
-    score: "1100+",
-    description: "Rating achieved through contests",
+    score: "1300+",
+    description: "Pupil rating through competitive contests",
     icon: CodeforcesIcon,
     color: "from-blue-400 to-blue-600",
     link: "https://codeforces.com/profile/AdityaSirsalkar",
@@ -142,8 +142,8 @@ const codingProfiles = [
   },
   {
     platform: "CodeChef",
-    score: "1500+",
-    description: "Rating achieved through contests",
+    score: "1600+",
+    description: "3-Star rating achieved through contests",
     icon: CodeChefIcon,
     color: "from-purple-400 to-purple-600",
     link: "https://www.codechef.com/users/amaze_iiita_76",

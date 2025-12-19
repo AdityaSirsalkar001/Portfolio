@@ -132,8 +132,8 @@ const codingProfiles = [
   },
   {
     platform: "Codeforces",
-    score: "1300+",
-    description: "Pupil rating through competitive contests",
+    score: "1400+",
+    description: "Specialist rating through competitive contests",
     icon: CodeforcesIcon,
     color: "from-blue-400 to-blue-600",
     link: "https://codeforces.com/profile/AdityaSirsalkar",

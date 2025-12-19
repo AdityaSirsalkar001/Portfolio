@@ -93,7 +93,7 @@ export function AboutSection() {
                   resolved production issues.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  With a strong foundation in Data Structures & Algorithms, Operating Systems, and DBMS,
+                  With a strong foundation in Data Structures & Algorithms and Operating Systems,
                   I've solved <strong>800+ coding problems</strong> across LeetCode, Codeforces, and CodeChef
                   while maintaining consistent practice and academic excellence.
                 </p>

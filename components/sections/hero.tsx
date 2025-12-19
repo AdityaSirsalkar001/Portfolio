@@ -95,7 +95,7 @@ export function HeroSection() {
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
               Building responsive and interactive web applications with React, Next.js, and Tailwind CSS.
-              Strong CS fundamentals in Data Structures & Algorithms, Operating Systems, DBMS, and OOP.
+              Strong CS fundamentals in Data Structures & Algorithms, Operating Systems, and OOP.
               Passionate about clean code and solving challenging problems.
             </p>
 

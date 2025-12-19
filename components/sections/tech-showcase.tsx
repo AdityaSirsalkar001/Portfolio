@@ -130,7 +130,7 @@ export function TechShowcaseSection() {
     load()
   }, [])
 
-  const list = stack || featuredTech
+  const list = stack && stack.length > 0 ? [...stack, ...featuredTech.filter(tech => !stack.some(s => s.name === tech.name))] : featuredTech
 
   return (
     <section className="py-16 bg-muted/20">

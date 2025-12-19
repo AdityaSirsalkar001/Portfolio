@@ -325,17 +325,17 @@ export function SkillsSection() {
               <CardHeader>
                 <div className="flex items-center justify-center gap-4 mb-4">
                   <Trophy className="w-8 h-8 text-primary" />
-                  <CardTitle className="text-2xl text-center">550+ Problems Solved</CardTitle>
+                  <CardTitle className="text-2xl text-center">800+ Problems Solved</CardTitle>
                 </div>
                 <CardDescription className="text-center text-lg">
-                  Maintained multi-week streaks while balancing academics, demonstrating 
-                  consistency and dedication to continuous learning
+                  Solved across LeetCode, Codeforces, and CodeChef platforms while maintaining
+                  multi-week streaks and balancing academics
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
                   <div>
-                    <div className="text-xl font-bold text-primary">550+</div>
+                    <div className="text-xl font-bold text-primary">800+</div>
                     <div className="text-sm text-muted-foreground">Total Problems</div>
                   </div>
                   <div>

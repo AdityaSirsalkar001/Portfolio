@@ -37,15 +37,15 @@ const experiences = [
     type: "project"
   },
   {
-    title: "Portfolio Website — Frontend",
+    title: "Personal Portfolio Website",
     role: "Frontend Developer",
-    period: "08/2025 – Present",
+    period: "Project",
     location: "Remote",
-    technologies: ["React", "Tailwind", "HTML", "CSS"],
-    description: "Developed personal portfolio website to showcase projects and skills",
+    technologies: ["React", "Tailwind CSS"],
+    description: "Developed a responsive portfolio to aggregate coding profiles and projects in one location",
     achievements: [
-      "Developed a responsive personal website optimized for desktop and mobile devices",
-      "Standardized design system by creating a component library, resulting in a uniform UI across 15+ web applications"
+      "Deployed responsive portfolio at aditya-sirsalkar.vercel.app",
+      "Created a reusable component library to standardize UI elements (buttons, cards), ensuring consistent design across mobile and desktop views"
     ],
     type: "project"
   },

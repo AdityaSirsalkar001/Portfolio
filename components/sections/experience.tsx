@@ -156,7 +156,7 @@ export function ExperienceSection() {
                         
                         <CardContent>
                           <p className="text-muted-foreground mb-4">{exp.description}</p>
-                          
+
                           {/* Technologies */}
                           <div className="flex flex-wrap gap-2 mb-4">
                             {exp.technologies.map((tech, techIndex) => (
@@ -167,7 +167,7 @@ export function ExperienceSection() {
                           </div>
 
                           {/* Achievements */}
-                          <ul className="space-y-2">
+                          <ul className="space-y-2 mb-4">
                             {exp.achievements.map((achievement, achievementIndex) => (
                               <li key={achievementIndex} className="flex items-start gap-2 text-sm">
                                 <span className="text-primary mt-1 flex-shrink-0">▸</span>
@@ -177,6 +177,21 @@ export function ExperienceSection() {
                               </li>
                             ))}
                           </ul>
+
+                          {/* View Project Button */}
+                          {exp.projectUrl && (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              asChild
+                              className="w-full border-primary/20 hover:border-primary/40"
+                            >
+                              <a href={exp.projectUrl} target="_blank" rel="noopener noreferrer">
+                                View Project
+                                <ExternalLink className="w-4 h-4 ml-2" />
+                              </a>
+                            </Button>
+                          )}
                         </CardContent>
                       </Card>
                     </motion.div>

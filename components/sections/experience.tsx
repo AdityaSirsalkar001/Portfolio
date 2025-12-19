@@ -9,17 +9,18 @@ import { ExternalLink, Calendar, MapPin } from "lucide-react"
 
 const experiences = [
   {
-    title: "Event Promotion App — UI/UX",
-    role: "UI/UX Designer",
-    period: "10/2024 – 11/2024",
+    title: "Swasthya-Setu — Healthcare Platform",
+    role: "Frontend Lead & Git Manager",
+    period: "Group Project",
     location: "Remote",
-    technologies: ["Figma"],
-    description: "Designed comprehensive mobile application for event discovery and promotion",
+    technologies: ["React.js", "Tailwind CSS", "Node.js", "Google Maps API"],
+    description: "Co-developed a comprehensive healthcare platform featuring role-based dashboards for Patients, Doctors, and Hospitals",
     achievements: [
-      "Designed end-to-end mobile flows for event discovery with category filters and search, improving navigation depth by 40% in user testing (peer reviews)",
-      "Created reusable component library (buttons, cards, tabs) ensuring consistent spacing, type scale, and color tokens"
+      "Designed the Patient Interface using React.js and Tailwind CSS, integrating Google Maps API for hospital search",
+      "Led the QA & Debugging phase; identified critical bugs and managed the Git repository to resolve merge conflicts and ensure a stable deployment",
+      "Facilitated appointment booking and medical record management across multiple user roles"
     ],
-    type: "design"
+    type: "project"
   },
   {
     title: "FocusFlow — Productivity Web App",

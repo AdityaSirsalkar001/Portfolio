@@ -91,12 +91,12 @@ export function HeroSection() {
           {/* Subtitle with typing effect */}
           <motion.div variants={itemVariants} className="mb-8">
             <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6">
-              Aspiring Software Developer
+              B.Tech Student at IIITA | Full-Stack Developer
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
-              Building responsive web applications with modern technologies,
-              with strong foundations in Data Structures & Algorithms, Operating Systems,
-              DBMS, and Object-Oriented Programming.
+              Building responsive and interactive web applications with React, Next.js, and Tailwind CSS.
+              Strong CS fundamentals in Data Structures & Algorithms, Operating Systems, DBMS, and OOP.
+              Passionate about clean code and solving challenging problems.
             </p>
 
             {/* Tech Stack Icons */}
@@ -175,12 +175,12 @@ export function HeroSection() {
           </motion.div>
 
           {/* Stats */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-2xl mx-auto"
           >
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-primary">550+</div>
+              <div className="text-2xl md:text-3xl font-bold text-primary">800+</div>
               <div className="text-sm text-muted-foreground">Problems Solved</div>
             </div>
             <div className="text-center">

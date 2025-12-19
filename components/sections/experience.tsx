@@ -24,15 +24,15 @@ const experiences = [
   },
   {
     title: "FocusFlow — Productivity Web App",
-    role: "Junior Software Developer",
-    period: "02/2025 – 03/2025",
+    role: "Developer",
+    period: "Group Project",
     location: "Remote",
     technologies: ["HTML", "CSS", "JavaScript"],
-    description: "Built a comprehensive task management application with advanced features",
+    description: "Built a dynamic task management application with priority sorting and deadline tracking",
     achievements: [
-      "Implemented task management with priorities, reminders, and deadline tracking; improved task entry-to-save flow by 35% fewer clicks",
-      "Built fully responsive layout (mobile-first) and optimized DOM updates to reduce interaction latency",
-      "Deployed as a static site (Live Link); used localStorage for persistent task data"
+      "Implemented task management with priorities, reminders, and deadline tracking using pure JavaScript",
+      "Optimized DOM manipulation logic to ensure zero-latency updates and implemented Local Storage for persistent user data across sessions",
+      "Deployed effectively on Vercel"
     ],
     type: "project"
   },

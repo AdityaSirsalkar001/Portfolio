@@ -50,16 +50,15 @@ const experiences = [
     type: "project"
   },
   {
-    title: "Chess Event Coordinator (Student Community) — IIIT Allahabad",
-    role: "Coordinator",
-    period: "08/2025 – Present",
+    title: "Chess Event Coordinator",
+    role: "Student Community — IIIT Allahabad",
+    period: "Aug 2025 – Present",
     location: "Prayagraj, India",
-    technologies: ["Community", "Coordination"],
-    description: "Organizing campus chess activities and events",
+    technologies: ["Event Management", "Coordination"],
+    description: "Orchestrating online and offline chess tournaments for campus community",
     achievements: [
-      "Organizing and managing online chess tournaments, ensuring smooth scheduling and participation",
-      "Conducting monthly offline tournaments, handling registrations, pairings, and results",
-      "Collaborating with students to promote chess culture and engagement on campus"
+      "Orchestrated online and offline chess tournaments, managing logistics for 50+ participants",
+      "Handled dispute resolution, scheduling, and results compilation to foster a competitive chess culture on campus"
     ],
     type: "community"
   }

@@ -34,7 +34,8 @@ const experiences = [
       "Optimized DOM manipulation logic to ensure zero-latency updates and implemented Local Storage for persistent user data across sessions",
       "Deployed effectively on Vercel"
     ],
-    type: "project"
+    type: "project",
+    projectUrl: "https://project1-nine-phi.vercel.app/"
   },
   {
     title: "Personal Portfolio Website",
@@ -47,7 +48,8 @@ const experiences = [
       "Deployed responsive portfolio at aditya-sirsalkar.vercel.app",
       "Created a reusable component library to standardize UI elements (buttons, cards), ensuring consistent design across mobile and desktop views"
     ],
-    type: "project"
+    type: "project",
+    projectUrl: "https://aditya-sirsalkar.vercel.app/"
   },
   {
     title: "Chess Event Coordinator",

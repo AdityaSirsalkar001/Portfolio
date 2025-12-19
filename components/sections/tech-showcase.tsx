@@ -155,7 +155,7 @@ export function TechShowcaseSection() {
           {/* Tech grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 items-stretch">
             {list.map((tech: any, index) => {
-              const Icon = (tech.icon || {}).render ? tech.icon : (tech.name === 'React' ? ReactIcon : tech.name === 'JavaScript' ? JavaScriptIcon : tech.name === 'Python' ? PythonIcon : tech.name === 'Node.js' ? NodeIcon : tech.name === 'MongoDB' ? MongoDBIcon : tech.name === 'MySQL' ? MySQLIcon : tech.name === 'C++' ? CppIcon : tech.name === 'Tailwind CSS' ? TailwindIcon : ReactIcon)
+              const Icon = (tech.icon || {}).render ? tech.icon : (tech.name === 'React' ? ReactIcon : tech.name === 'JavaScript' ? JavaScriptIcon : tech.name === 'Python' ? PythonIcon : tech.name === 'Node.js' ? NodeIcon : tech.name === 'MongoDB' ? MongoDBIcon : tech.name === 'MySQL' ? MySQLIcon : tech.name === 'C++' ? CppIcon : tech.name === 'Tailwind CSS' ? TailwindIcon : tech.name === 'TypeScript' ? TypeScriptIcon : tech.name === 'Figma' ? FigmaIcon : ReactIcon)
               const color = tech.color || '#3b82f6'
               return (
                 <motion.div

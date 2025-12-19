@@ -60,10 +60,11 @@ const skillCategories = [
     icon: Palette,
     description: "User interface and experience technologies",
     skills: [
-      { name: "React", icon: ReactIcon, hasIcon: true },
-      { name: "TailwindCSS", icon: TailwindIcon, hasIcon: true },
-      { name: "Responsive Design", hasIcon: false },
-      { name: "Accessibility (ARIA)", hasIcon: false }
+      { name: "React.js", icon: ReactIcon, hasIcon: true },
+      { name: "Next.js", hasIcon: false },
+      { name: "Tailwind CSS", icon: TailwindIcon, hasIcon: true },
+      { name: "Material UI", hasIcon: false },
+      { name: "Responsive Design", hasIcon: false }
     ],
     color: "text-purple-500"
   },
@@ -97,9 +98,10 @@ const skillCategories = [
     skills: [
       { name: "Git", icon: GitIcon, hasIcon: true },
       { name: "GitHub", hasIcon: false },
+      { name: "VS Code", hasIcon: false },
       { name: "Postman", hasIcon: false },
       { name: "Vercel", icon: VercelIcon, hasIcon: true },
-      { name: "Microsoft Office Suite", hasIcon: false }
+      { name: "Google Maps API", hasIcon: false }
     ],
     color: "text-gray-500"
   },

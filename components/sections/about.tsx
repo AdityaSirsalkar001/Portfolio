@@ -82,19 +82,20 @@ export function AboutSection() {
               <div>
                 <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I'm an aspiring Software Developer currently pursuing B.Tech in Information
-                  Technology at IIITA. I build responsive UIs and practical web
-                  applications using React and Tailwind, with solid CS fundamentals.
+                  I'm a B.Tech student in Information Technology at IIITA with a passion for building
+                  responsive web applications and solving complex problems. I specialize in frontend development
+                  using React.js, Next.js, and Tailwind CSS, with strong backend knowledge in Node.js and Express.js.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I'm comfortable with <strong>Node.js, Express.js</strong> and integrating 
-                  <strong> MySQL/MongoDB</strong> for CRUD workflows. My approach emphasizes 
-                  clean code, thorough testing, and effective collaboration in agile teams.
+                  I have hands-on experience with <strong>MongoDB and MySQL</strong> for database design
+                  and CRUD operations. My approach emphasizes writing clean, maintainable code and collaborating
+                  effectively in team environments. I've led development teams, managed Git repositories, and
+                  resolved production issues.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Detail-oriented and enthusiastic about technology, I've solved 
-                  <strong> 550+ coding problems</strong> across platforms while maintaining 
-                  multi-week streaks and balancing academics.
+                  With a strong foundation in Data Structures & Algorithms, Operating Systems, and DBMS,
+                  I've solved <strong>800+ coding problems</strong> across LeetCode, Codeforces, and CodeChef
+                  while maintaining consistent practice and academic excellence.
                 </p>
               </div>
 

@@ -9,7 +9,7 @@ import { Code, GraduationCap, Trophy, Target } from "lucide-react"
 const achievements = [
   {
     icon: Code,
-    number: "550+",
+    number: "800+",
     label: "Coding Problems Solved",
     description: "Across LeetCode, Codeforces, and CodeChef platforms"
   },
@@ -28,8 +28,8 @@ const achievements = [
   {
     icon: Target,
     number: "3",
-    label: "Projects Completed",
-    description: "Portfolio, FocusFlow, Event Promotion App"
+    label: "Major Projects",
+    description: "Swasthya-Setu, FocusFlow, Portfolio Website"
   }
 ]
 

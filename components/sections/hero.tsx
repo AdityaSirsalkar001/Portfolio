@@ -14,7 +14,15 @@ import {
   MySQLIcon,
   CppIcon,
   GitIcon,
-  TailwindIcon
+  TailwindIcon,
+  TypeScriptIcon,
+  JavaIcon,
+  HTMLIcon,
+  CSSIcon,
+  ExpressIcon,
+  VercelIcon,
+  RIcon,
+  WebAssemblyIcon
 } from "@/components/tech-icons"
 import { FloatingTechIcons } from "@/components/floating-tech-icons"
 

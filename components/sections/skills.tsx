@@ -78,7 +78,8 @@ const skillCategories = [
     skills: [
       { name: "Node.js", icon: NodeIcon, hasIcon: true },
       { name: "Express.js", icon: ExpressIcon, hasIcon: true },
-      { name: "REST APIs", hasIcon: false }
+      { name: "REST APIs", hasIcon: false },
+      { name: "WebAssembly", hasIcon: false }
     ],
     color: "text-green-500"
   },

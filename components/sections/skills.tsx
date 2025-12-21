@@ -117,7 +117,10 @@ const skillCategories = [
       { name: "Data Structures & Algorithms", hasIcon: false },
       { name: "Operating Systems", hasIcon: false },
       { name: "Computer Organization & Architecture", hasIcon: false },
-      { name: "Object-Oriented Programming", hasIcon: false }
+      { name: "Object-Oriented Programming", hasIcon: false },
+      { name: "System Design", hasIcon: false },
+      { name: "SDLC", hasIcon: false },
+      { name: "Agile Methodologies", hasIcon: false }
     ],
     color: "text-red-500"
   }

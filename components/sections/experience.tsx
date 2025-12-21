@@ -183,20 +183,35 @@ export function ExperienceSection() {
                             ))}
                           </ul>
 
-                          {/* View Project Button */}
-                          {exp.projectUrl && (
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              asChild
-                              className="w-full border-primary/20 hover:border-primary/40"
-                            >
-                              <a href={exp.projectUrl} target="_blank" rel="noopener noreferrer">
-                                View Project
-                                <ExternalLink className="w-4 h-4 ml-2" />
-                              </a>
-                            </Button>
-                          )}
+                          {/* View Project and GitHub Buttons */}
+                          <div className="flex gap-3 w-full">
+                            {exp.projectUrl && (
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                asChild
+                                className="flex-1 border-primary/20 hover:border-primary/40"
+                              >
+                                <a href={exp.projectUrl} target="_blank" rel="noopener noreferrer">
+                                  Live Link
+                                  <ExternalLink className="w-4 h-4 ml-2" />
+                                </a>
+                              </Button>
+                            )}
+                            {exp.githubUrl && (
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                asChild
+                                className="flex-1 border-primary/20 hover:border-primary/40"
+                              >
+                                <a href={exp.githubUrl} target="_blank" rel="noopener noreferrer">
+                                  Code
+                                  <Github className="w-4 h-4 ml-2" />
+                                </a>
+                              </Button>
+                            )}
+                          </div>
                         </CardContent>
                       </Card>
                     </motion.div>

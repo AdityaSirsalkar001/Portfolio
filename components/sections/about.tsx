@@ -17,19 +17,19 @@ const achievements = [
     icon: Trophy,
     number: "99.68",
     label: "JEE Main Percentile",
-    description: "All India Rank: 5183"
+    description: "All India Rank: 5183 (Top 0.32%)"
   },
   {
     icon: GraduationCap,
-    number: "IIITA",
-    label: "B.Tech Information Technology",
-    description: "Currently pursuing at a premier institute"
+    number: "Knight",
+    label: "LeetCode Badge",
+    description: "Top 5% globally (Max Rating: 1877)"
   },
   {
     icon: Target,
     number: "3",
     label: "Major Projects",
-    description: "Swasthya-Setu, FocusFlow, Portfolio Website"
+    description: "Swasthya-Setu, Pathfinding Visualizer, FocusFlow"
   }
 ]
 

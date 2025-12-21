@@ -113,6 +113,18 @@ export const FigmaIcon = ({ className, size = 24 }: TechIconProps) => (
   </svg>
 )
 
+export const RIcon = ({ className, size = 24 }: TechIconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" className={className}>
+    <path fill="#276DC3" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 1.5c5.799 0 10.5 4.701 10.5 10.5S17.799 22.5 12 22.5 1.5 17.799 1.5 12 6.201 1.5 12 1.5zm3.5 5a2 2 0 11-4 0 2 2 0 014 0zm-7 0a2 2 0 11-4 0 2 2 0 014 0zm3.5 10a5 5 0 110-10 5 5 0 010 10z"/>
+  </svg>
+)
+
+export const WebAssemblyIcon = ({ className, size = 24 }: TechIconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" className={className}>
+    <path fill="#654FF0" d="M6.5 3C5.12 3 4 4.12 4 5.5v13C4 19.88 5.12 21 6.5 21h11C18.88 21 20 19.88 20 18.5v-13C20 4.12 18.88 3 17.5 3h-11zm1.5 3h2l2.5 6 2.5-6h2l-3.5 8v4h-2v-4l-3.5-8z"/>
+  </svg>
+)
+
 // Coding platform logos
 export const LeetCodeIcon = ({ className, size = 24 }: TechIconProps) => (
   <img

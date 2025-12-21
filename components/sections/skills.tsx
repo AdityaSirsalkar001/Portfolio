@@ -48,8 +48,11 @@ const skillCategories = [
       { name: "C", icon: CIcon, hasIcon: true },
       { name: "C++", icon: CppIcon, hasIcon: true },
       { name: "JavaScript", icon: JavaScriptIcon, hasIcon: true },
+      { name: "TypeScript", hasIcon: false },
       { name: "Python", icon: PythonIcon, hasIcon: true },
       { name: "Java", icon: JavaIcon, hasIcon: true },
+      { name: "R", hasIcon: false },
+      { name: "SQL (MySQL)", hasIcon: false },
       { name: "HTML", icon: HTMLIcon, hasIcon: true },
       { name: "CSS", icon: CSSIcon, hasIcon: true }
     ],

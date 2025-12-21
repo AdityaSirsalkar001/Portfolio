@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Calendar, MapPin } from "lucide-react"
+import { ExternalLink, Calendar, MapPin, Github } from "lucide-react"
 
 const experiences = [
   {

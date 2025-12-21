@@ -83,19 +83,21 @@ export function AboutSection() {
                 <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   I'm a B.Tech student in Information Technology at IIITA with a passion for building
-                  responsive web applications and solving complex problems. I specialize in frontend development
-                  using React.js, Next.js, and Tailwind CSS, with strong backend knowledge in Node.js and Express.js.
+                  responsive web applications and solving complex problems. I specialize in full-stack development
+                  using React.js, Next.js, and Tailwind CSS for frontend, with strong backend knowledge in Node.js and Express.js.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   I have hands-on experience with <strong>MongoDB and MySQL</strong> for database design
-                  and CRUD operations. My approach emphasizes writing clean, maintainable code and collaborating
-                  effectively in team environments. I've led development teams, managed Git repositories, and
-                  resolved production issues.
+                  and CRUD operations, along with <strong>WebAssembly</strong> for performance-critical applications.
+                  My approach emphasizes writing clean, maintainable code and collaborating effectively in team environments
+                  using Agile methodologies. I've architected multi-user platforms, managed Git repositories, and
+                  facilitated cross-functional team communication.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   With a strong foundation in Data Structures & Algorithms and Operating Systems,
-                  I've solved <strong>800+ coding problems</strong> across LeetCode, Codeforces, and CodeChef
-                  while maintaining consistent practice and academic excellence.
+                  I've solved <strong>800+ coding problems</strong> across LeetCode (Knight badge, Top 5%, rating 1877),
+                  Codeforces (Specialist), and CodeChef (3-Star) while maintaining a 100+ day streak and academic excellence.
+                  I also co-engineered a prototype event management solution during the 36-hour OOC Hackathon.
                 </p>
               </div>
 

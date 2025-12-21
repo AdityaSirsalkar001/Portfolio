@@ -294,7 +294,10 @@ export function SkillsSection() {
                           <Icon size={32} />
                         </div>
                         <CardTitle className="text-xl">{profile.platform}</CardTitle>
-                        <div className="text-2xl font-bold text-primary mt-2">
+                        <div className="text-sm text-muted-foreground mt-2">
+                          Max Rating
+                        </div>
+                        <div className="text-2xl font-bold text-primary mt-1">
                           {profile.score}
                         </div>
                       </div>

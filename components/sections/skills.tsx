@@ -129,7 +129,7 @@ const skillCategories = [
 const codingProfiles = [
   {
     platform: "LeetCode",
-    score: "1850+",
+    score: "1877",
     description: "Knight Badge (Top 5% globally)",
     icon: LeetCodeIcon,
     color: "from-orange-400 to-orange-600",
@@ -139,7 +139,7 @@ const codingProfiles = [
   },
   {
     platform: "Codeforces",
-    score: "1400+",
+    score: "1465",
     description: "Specialist rating through competitive contests",
     icon: CodeforcesIcon,
     color: "from-blue-400 to-blue-600",
@@ -149,7 +149,7 @@ const codingProfiles = [
   },
   {
     platform: "CodeChef",
-    score: "1600+",
+    score: "1640",
     description: "3-Star rating achieved through contests",
     icon: CodeChefIcon,
     color: "from-purple-400 to-purple-600",

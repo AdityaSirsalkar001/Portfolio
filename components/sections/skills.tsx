@@ -48,8 +48,11 @@ const skillCategories = [
       { name: "C", icon: CIcon, hasIcon: true },
       { name: "C++", icon: CppIcon, hasIcon: true },
       { name: "JavaScript", icon: JavaScriptIcon, hasIcon: true },
+      { name: "TypeScript", hasIcon: false },
       { name: "Python", icon: PythonIcon, hasIcon: true },
       { name: "Java", icon: JavaIcon, hasIcon: true },
+      { name: "R", hasIcon: false },
+      { name: "SQL (MySQL)", hasIcon: false },
       { name: "HTML", icon: HTMLIcon, hasIcon: true },
       { name: "CSS", icon: CSSIcon, hasIcon: true }
     ],
@@ -75,7 +78,8 @@ const skillCategories = [
     skills: [
       { name: "Node.js", icon: NodeIcon, hasIcon: true },
       { name: "Express.js", icon: ExpressIcon, hasIcon: true },
-      { name: "REST APIs", hasIcon: false }
+      { name: "REST APIs", hasIcon: false },
+      { name: "WebAssembly", hasIcon: false }
     ],
     color: "text-green-500"
   },
@@ -113,7 +117,10 @@ const skillCategories = [
       { name: "Data Structures & Algorithms", hasIcon: false },
       { name: "Operating Systems", hasIcon: false },
       { name: "Computer Organization & Architecture", hasIcon: false },
-      { name: "Object-Oriented Programming", hasIcon: false }
+      { name: "Object-Oriented Programming", hasIcon: false },
+      { name: "System Design", hasIcon: false },
+      { name: "SDLC", hasIcon: false },
+      { name: "Agile Methodologies", hasIcon: false }
     ],
     color: "text-red-500"
   }
@@ -122,7 +129,7 @@ const skillCategories = [
 const codingProfiles = [
   {
     platform: "LeetCode",
-    score: "1850+",
+    score: "1877",
     description: "Knight Badge (Top 5% globally)",
     icon: LeetCodeIcon,
     color: "from-orange-400 to-orange-600",
@@ -132,7 +139,7 @@ const codingProfiles = [
   },
   {
     platform: "Codeforces",
-    score: "1400+",
+    score: "1465",
     description: "Specialist rating through competitive contests",
     icon: CodeforcesIcon,
     color: "from-blue-400 to-blue-600",
@@ -142,7 +149,7 @@ const codingProfiles = [
   },
   {
     platform: "CodeChef",
-    score: "1600+",
+    score: "1640",
     description: "3-Star rating achieved through contests",
     icon: CodeChefIcon,
     color: "from-purple-400 to-purple-600",
@@ -287,7 +294,10 @@ export function SkillsSection() {
                           <Icon size={32} />
                         </div>
                         <CardTitle className="text-xl">{profile.platform}</CardTitle>
-                        <div className="text-2xl font-bold text-primary mt-2">
+                        <div className="text-sm text-muted-foreground mt-2">
+                          Max Rating
+                        </div>
+                        <div className="text-2xl font-bold text-primary mt-1">
                           {profile.score}
                         </div>
                       </div>

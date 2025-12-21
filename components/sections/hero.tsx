@@ -14,7 +14,15 @@ import {
   MySQLIcon,
   CppIcon,
   GitIcon,
-  TailwindIcon
+  TailwindIcon,
+  TypeScriptIcon,
+  JavaIcon,
+  HTMLIcon,
+  CSSIcon,
+  ExpressIcon,
+  VercelIcon,
+  RIcon,
+  WebAssemblyIcon
 } from "@/components/tech-icons"
 import { FloatingTechIcons } from "@/components/floating-tech-icons"
 
@@ -106,11 +114,12 @@ export function HeroSection() {
                 <span>Tech Stack</span>
                 <Sparkles className="w-4 h-4" />
               </div>
-              <div className="flex flex-wrap items-center justify-center gap-4 max-w-2xl">
+              <div className="flex flex-wrap items-center justify-center gap-4 max-w-4xl">
                 <motion.div
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                   className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="React"
                 >
                   <ReactIcon size={32} className="text-[#61DAFB]" />
                 </motion.div>
@@ -118,6 +127,7 @@ export function HeroSection() {
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                   className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="JavaScript"
                 >
                   <JavaScriptIcon size={32} />
                 </motion.div>
@@ -125,6 +135,15 @@ export function HeroSection() {
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                   className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="TypeScript"
+                >
+                  <TypeScriptIcon size={32} className="text-[#3178c6]" />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="Python"
                 >
                   <PythonIcon size={32} />
                 </motion.div>
@@ -132,6 +151,7 @@ export function HeroSection() {
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                   className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="C++"
                 >
                   <CppIcon size={32} />
                 </motion.div>
@@ -139,27 +159,39 @@ export function HeroSection() {
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                   className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="Java"
                 >
-                  <NodeIcon size={32} />
+                  <JavaIcon size={32} className="text-[#ED8B00]" />
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                   className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="R"
                 >
-                  <MongoDBIcon size={32} />
+                  <RIcon size={32} className="text-[#276DC3]" />
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                   className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="HTML"
                 >
-                  <MySQLIcon size={32} />
+                  <HTMLIcon size={32} />
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                   className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="CSS"
+                >
+                  <CSSIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="Tailwind CSS"
                 >
                   <TailwindIcon size={32} />
                 </motion.div>
@@ -167,8 +199,57 @@ export function HeroSection() {
                   whileHover={{ scale: 1.1, y: -2 }}
                   transition={{ duration: 0.2 }}
                   className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="Node.js"
+                >
+                  <NodeIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="Express.js"
+                >
+                  <ExpressIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="MongoDB"
+                >
+                  <MongoDBIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="MySQL"
+                >
+                  <MySQLIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="WebAssembly"
+                >
+                  <WebAssemblyIcon size={32} className="text-[#654FF0]" />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="Git"
                 >
                   <GitIcon size={32} />
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ duration: 0.2 }}
+                  className="p-3 bg-muted/50 backdrop-blur-sm rounded-lg hover:bg-muted/80 transition-colors"
+                  title="Vercel"
+                >
+                  <VercelIcon size={32} />
                 </motion.div>
               </div>
             </div>

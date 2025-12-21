@@ -5,62 +5,67 @@ import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Calendar, MapPin } from "lucide-react"
+import { ExternalLink, Calendar, MapPin, Github } from "lucide-react"
 
 const experiences = [
   {
-    title: "Swasthya-Setu — Healthcare Platform",
-    role: "Frontend Lead & Git Manager",
+    title: "Swasthya-Setu — Integrated Hospital-Patient Bridge",
+    role: "Full Stack Developer & AI Integration",
     period: "Group Project",
     location: "Remote",
-    technologies: ["React.js", "Tailwind CSS", "Node.js", "Google Maps API"],
-    description: "Co-developed a comprehensive healthcare platform featuring role-based dashboards for Patients, Doctors, and Hospitals",
+    technologies: ["React.js", "Node.js", "Gemini API"],
+    description: "Architected a centralized healthcare platform serving 3 user roles (Patients, Doctors, Hospitals), reducing manual appointment scheduling time by an estimated 40%.",
     achievements: [
-      "Designed the Patient Interface using React.js and Tailwind CSS, integrating Google Maps API for hospital search",
-      "Led the QA & Debugging phase; identified critical bugs and managed the Git repository to resolve merge conflicts and ensure a stable deployment",
-      "Facilitated appointment booking and medical record management across multiple user roles"
+      "Integrated Google Gemini AI to process symptom queries and summarize medical records, improving triage efficiency for 100+ simulated patient scenarios",
+      "Authored comprehensive API documentation and facilitated cross-functional communication within a 6-member team, ensuring seamless Agile integration and reducing merge conflicts by 90%",
+      "Architected multi-role dashboard system for Patients, Doctors, and Hospitals with appointment booking and medical record management"
     ],
-    type: "project"
+    type: "project",
+    projectUrl: "https://swasthya-setu-swhi-awaezga4s-anshdeep-singhs-projects-dbaa79e9.vercel.app/",
+    githubUrl: "https://github.com/AdityaSirsalkar001/Swasthya_Setu"
+  },
+  {
+    title: "High-Performance Pathfinding Visualizer",
+    role: "Solo Developer",
+    period: "Solo Project",
+    location: "Remote",
+    technologies: ["C++", "WebAssembly", "React", "TypeScript"],
+    description: "Engineered a high-frequency visualizer using C++ and WebAssembly, achieving 10x faster execution (sub-50ms latency) for complex graphs compared to JS-only solutions.",
+    achievements: [
+      "Implemented 5+ algorithms (A*, Dijkstra, Bidirectional BFS) and visualized pathfinding across grids of up to 2,500 nodes with real-time performance benchmarking",
+      "Designed a responsive UI with React and Vite, enabling users to generate 50+ random maze patterns",
+      "Achieved 10x performance improvement through C++ and WebAssembly optimization"
+    ],
+    type: "project",
+    projectUrl: "https://pathfinding-visualizer-phi-orpin.vercel.app/",
+    githubUrl: "https://github.com/AdityaSirsalkar001/Pathfinding_Visualizer"
   },
   {
     title: "FocusFlow — Productivity Web App",
     role: "Developer",
     period: "Group Project",
     location: "Remote",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    description: "Built a dynamic task management application with priority sorting and deadline tracking",
+    technologies: ["React.js", "Tailwind CSS", "LocalStorage"],
+    description: "Deployed a task management app handling 50+ concurrent tasks with zero latency by leveraging React Hooks and optimized LocalStorage caching.",
     achievements: [
-      "Implemented task management with priorities, reminders, and deadline tracking using pure JavaScript",
-      "Optimized DOM manipulation logic to ensure zero-latency updates and implemented Local Storage for persistent user data across sessions",
-      "Deployed effectively on Vercel"
+      "Optimized application performance by implementing Lazy Loading and efficient state management, ensuring a seamless user experience across mobile and desktop devices",
+      "Reduced task organization time by 30% through the implementation of an automated priority-sorting algorithm and deadline tracking system",
+      "Handled 50+ concurrent tasks with zero latency through React Hooks optimization"
     ],
     type: "project",
-    projectUrl: "https://project1-nine-phi.vercel.app/"
-  },
-  {
-    title: "Personal Portfolio Website",
-    role: "Frontend Developer",
-    period: "Project",
-    location: "Remote",
-    technologies: ["React", "Tailwind CSS"],
-    description: "Developed a responsive portfolio to aggregate coding profiles and projects in one location",
-    achievements: [
-      "Deployed responsive portfolio at aditya-sirsalkar.vercel.app",
-      "Created a reusable component library to standardize UI elements (buttons, cards), ensuring consistent design across mobile and desktop views"
-    ],
-    type: "project",
-    projectUrl: "https://aditya-sirsalkar.vercel.app/"
+    projectUrl: "https://project1-nine-phi.vercel.app/",
+    githubUrl: "https://github.com/AdityaSirsalkar001/FocusFlow"
   },
   {
     title: "Chess Event Coordinator",
     role: "Student Community — IIIT Allahabad",
     period: "Aug 2025 – Present",
     location: "Prayagraj, India",
-    technologies: ["Event Management", "Coordination"],
-    description: "Orchestrating online and offline chess tournaments for campus community",
+    technologies: ["Event Management", "Leadership", "Coordination"],
+    description: "Orchestrated a hybrid chess tournament for 100+ online participants, designing a competitive qualifier format where the top 32 players advanced to the offline finals.",
     achievements: [
-      "Orchestrated online and offline chess tournaments, managing logistics for 50+ participants",
-      "Handled dispute resolution, scheduling, and results compilation to foster a competitive chess culture on campus"
+      "Directed 50+ rapid chess matches over 48 hours, mediating disputes and automating result compilation for the live leaderboard",
+      "Managed logistics and coordination for both online and offline tournaments with 100+ participants"
     ],
     type: "community"
   }
@@ -178,20 +183,35 @@ export function ExperienceSection() {
                             ))}
                           </ul>
 
-                          {/* View Project Button */}
-                          {exp.projectUrl && (
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              asChild
-                              className="w-full border-primary/20 hover:border-primary/40"
-                            >
-                              <a href={exp.projectUrl} target="_blank" rel="noopener noreferrer">
-                                View Project
-                                <ExternalLink className="w-4 h-4 ml-2" />
-                              </a>
-                            </Button>
-                          )}
+                          {/* View Project and GitHub Buttons */}
+                          <div className="flex gap-3 w-full">
+                            {exp.projectUrl && (
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                asChild
+                                className="flex-1 border-primary/20 hover:border-primary/40"
+                              >
+                                <a href={exp.projectUrl} target="_blank" rel="noopener noreferrer">
+                                  Live Link
+                                  <ExternalLink className="w-4 h-4 ml-2" />
+                                </a>
+                              </Button>
+                            )}
+                            {exp.githubUrl && (
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                asChild
+                                className="flex-1 border-primary/20 hover:border-primary/40"
+                              >
+                                <a href={exp.githubUrl} target="_blank" rel="noopener noreferrer">
+                                  Code
+                                  <Github className="w-4 h-4 ml-2" />
+                                </a>
+                              </Button>
+                            )}
+                          </div>
                         </CardContent>
                       </Card>
                     </motion.div>
